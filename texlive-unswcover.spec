@@ -1,18 +1,12 @@
-# revision 29476
-# category Package
-# catalog-ctan /macros/latex/contrib/unswcover
-# catalog-date 2013-03-22 09:14:02 +0100
-# catalog-license noinfo
-# catalog-version 1.0
 Name:		texlive-unswcover
-Version:	1.0
-Release:	10
+Version:	29476
+Release:	1
 Summary:	Typeset a dissertation cover page following UNSW guidelines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unswcover
 License:	NOINFO
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ sheets such as Originality, Copyright and Authenticity
 statements.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ statements.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
