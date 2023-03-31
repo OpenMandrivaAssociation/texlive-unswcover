@@ -1,6 +1,6 @@
 Name:		texlive-unswcover
 Version:	29476
-Release:	1
+Release:	2
 Summary:	Typeset a dissertation cover page following UNSW guidelines
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unswcover
