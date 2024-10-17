@@ -3,7 +3,7 @@ Version:	66115
 Release:	1
 Summary:	Typeset a dissertation cover page following UNSW guidelines
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unswcover
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/unswcover
 License:	NOINFO
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unswcover.doc.r%{version}.tar.xz
